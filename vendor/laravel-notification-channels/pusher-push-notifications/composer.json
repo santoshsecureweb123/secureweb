@@ -1,0 +1,62 @@
+{
+    "name": "laravel-notification-channels/pusher-push-notifications",
+    "description": "Pusher native Push Notifications driver.",
+    "keywords": [
+        "pusher-push-notifications",
+        "laravel",
+        "pusher",
+        "notifications"
+    ],
+    "homepage": "https://github.com/LaravelNotificationChannels/pusher-push-notifications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Said",
+            "email": "themsaid@gmail.com",
+            "homepage": "https://themsaid.com"
+        },
+        {
+            "name": "Marcel Pociot",
+            "email": "hello@marcelpociot.com",
+            "homepage": "http://marcelpociot.com"
+        },
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be"
+        },
+        {
+            "name": "Sebastian De Deyne",
+            "email": "sebastian@spatie.be",
+            "homepage": "https://sebastiandedeyne.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/events": "~5.5 || ~6.0",
+        "illuminate/notifications": "~5.5 || ~6.0",
+        "illuminate/queue": "~5.5 || ~6.0",
+        "illuminate/support": "~5.5 || ~6.0",
+        "pusher/pusher-php-server": "~3.0 || ~4.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\PusherPushNotifications\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\PusherPushNotifications\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
