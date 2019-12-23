@@ -9,7 +9,6 @@ use App\QuizAnswer;
 
 class UserController extends Controller
 {
-
     public function dashboard()
     {
     	$quiz = QuizAnswer::with(['users','quizs'])->get();  
